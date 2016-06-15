@@ -7,5 +7,5 @@
 - [PyZh](https://pyzh.readthedocs.io/en/latest/index.html)
 - [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 
-## Lisense
-Apache Lisense 2.0
+## License
+Apache License 2.0
