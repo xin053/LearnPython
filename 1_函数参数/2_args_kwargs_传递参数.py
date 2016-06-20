@@ -32,5 +32,3 @@ if __name__ == '__main__':
 
     kwargs = {"arg3": 3, "arg2": "two", "arg1": 5}
     test_args_kwargs(**kwargs)
-
-

@@ -41,6 +41,3 @@ if __name__ == '__main__':
     print(result)
     # Output: addition_func was called
     #         8
-
-
-

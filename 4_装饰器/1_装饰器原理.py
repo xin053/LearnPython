@@ -49,5 +49,3 @@ if __name__ == '__main__':
     #outputs:I am doing some boring work before executing a_func()
     #        I am the function which needs some decoration to remove my foul smell
     #        I am doing some boring work after executing a_func()
-
-

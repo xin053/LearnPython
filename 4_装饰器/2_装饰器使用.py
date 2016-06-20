@@ -46,5 +46,3 @@ if __name__ == '__main__':
 
     #the @a_new_decorator is just a short way of saying:
     #a_function_requiring_decoration = a_new_decorator(a_function_requiring_decoration)
-
-

@@ -4,23 +4,27 @@
 """
     Copyright©2016.All rights reserved by xin053.
     ------------------------------------------------------------------------------------------------
-    FileName: 1_kwargs_不定长度键值对参数.py
+    FileName: 4_cookie.py
     Author: xin053
     Version: 1.0
-    Time: 2016-06-15 23:42:41
+    Time: 2016-06-20 15:55:50
     License: Apache License 2.0
-    Description: **kwargs参数的使用
+    Description: 获取cookie以及在请求中附加自定义cookie
     Example:
     ------------------------------------------------------------------------------------------------
 """
 
 
-def greet_me(**kwargs):
-    """
-    the usage of **kwargs
-    """
-    for key, value in kwargs.items():
-        print("{0} == {1}".format(key, value))
+import requests
 
 if __name__ == '__main__':
-    greet_me(name="zzx")
+    r = requests.get('https://httpbin.org/get')
+
+    # get the cookies that the server set
+    print(r.cookies)
+
+    cookies = dict(user='xin053')
+
+    # send a GET request with custom cookie
+    r = requests.get('https://httpbin.org/get', cookies=cookies)
+    print(r.text)

@@ -27,5 +27,3 @@ def fibon(n):
 if __name__ == '__main__':
     for i in fibon(100):
         print(i)
-
-

@@ -61,6 +61,3 @@ if __name__ == '__main__':
     print("when authorization is True:")
     request.authorization = True
     pay_function()
-
-
-
