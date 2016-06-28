@@ -35,3 +35,6 @@ if __name__ == '__main__':
     #         requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='github.com', port=80): 
     #         Max retries exceeded with url: / (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object 
     #         at 0x0000025D8AF77470>, 'Connection to github.com timed out. (connect timeout=0.001)'))
+
+    # If the remote server is very slow, you can tell Requests to wait forever for a response
+    requests.get('https://github.com', timeout=None)
